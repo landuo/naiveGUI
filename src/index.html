@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+  <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline';" />
+
+  <link href="./styles.css" rel="stylesheet">
+  <title>Naive启动器</title>
+  <style>
+    .form-group {
+      margin-bottom: 10px;
+    }
+
+    label {
+      display: inline-block;
+      width: auto;
+    }
+
+    input[type="text"] {
+      width: auto;
+      margin-right: 10px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="form-group">
+    <label for="status" style="width: 50px;">开关: </label>
+    <input type="checkbox" id="status">
+  </div>
+  <div class="form-group">
+    <label for="filePath">naive文件地址: </label>
+    <input type="text" id="filePath">
+  </div>
+  <div class="form-group">
+    <label for="addr">监听地址: </label>
+    <input type="text" id="addr">
+  </div>
+  <div class="form-group">
+    <label for="urlInput">监听端口: </label>
+    <input type="text" id="port">
+  </div>
+  <div class="form-group">
+    <label for="proxy">代理地址(如 yourserver.com): </label>
+    <input type="text" id="proxy">
+  </div>
+  <div class="form-group">
+    <label for="username">账号: </label>
+    <input type="text" id="username">
+  </div>
+  <div class="form-group">
+    <label for="password">密码: </label>
+    <input type="text" id="password">
+  </div>
+  <div class="form-group">
+    <button id="saveButton">保存</button>
+  </div>
+  <!-- You can also require other files to run in this process -->
+  <script src="./renderer.js"></script>
+  <script>
+</body>
+</html>
